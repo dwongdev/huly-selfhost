@@ -223,6 +223,7 @@ services:
       - DEFAULT_LANGUAGE=${DEFAULT_LANGUAGE:-en}
       - LAST_NAME_FIRST=${LAST_NAME_FIRST:-true}
       - DESKTOP_UPDATES_CHANNEL=${DESKTOP_CHANNEL}
+      - DISABLED_FEATURES=auto-translate,mailboxes
     restart: unless-stopped
     networks:
       - huly_net
